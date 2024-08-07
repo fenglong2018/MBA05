@@ -1,0 +1,10 @@
+.\objects\bsp_rdssparse.o: ..\BSP\src\Bsp_RdssParse.c
+.\objects\bsp_rdssparse.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\bsp_rdssparse.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\bsp_rdssparse.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\bsp_rdssparse.o: ..\API\inc\api_common.h
+.\objects\bsp_rdssparse.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\bsp_rdssparse.o: ..\BSP\inc\Bsp_RdssParse.h
+.\objects\bsp_rdssparse.o: ..\BSP\inc\Bsp_RdssSend.h
+.\objects\bsp_rdssparse.o: ..\BSP\inc\Bsp_Config.h
+.\objects\bsp_rdssparse.o: ..\BSP\inc\Bsp_Log.h

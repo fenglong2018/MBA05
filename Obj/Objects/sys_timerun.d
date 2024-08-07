@@ -1,0 +1,10 @@
+.\objects\sys_timerun.o: ..\APP\Sys_TimeRun.c
+.\objects\sys_timerun.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\sys_timerun.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\sys_timerun.o: ..\Hal\inc\Hal_Sleep.h
+.\objects\sys_timerun.o: ..\BSP\inc\Bsp_BatVol.h
+.\objects\sys_timerun.o: ..\BSP\inc\Bsp_KeyLed.h
+.\objects\sys_timerun.o: ..\BSP\inc\Bsp_RdssSend.h
+.\objects\sys_timerun.o: ..\BSP\inc\Bsp_GnssParse.h
+.\objects\sys_timerun.o: ..\BSP\inc\Bsp_Config.h
+.\objects\sys_timerun.o: ..\BSP\inc\Bsp_Log.h
