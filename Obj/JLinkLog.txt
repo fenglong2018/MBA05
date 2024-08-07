@@ -1,0 +1,62 @@
+T37A8 000:002.631   SEGGER J-Link V7.20b Log File
+T37A8 000:002.800   DLL Compiled: May 21 2021 17:05:23
+T37A8 000:002.803   Logging started @ 2024-08-01 08:58
+T37A8 000:002.805 - 2.807ms
+T37A8 000:002.810 JLINK_SetWarnOutHandler(...)
+T37A8 000:002.813 - 0.004ms
+T37A8 000:002.816 JLINK_OpenEx(...)
+T37A8 000:004.442   Firmware: J-Link V9 compiled May  7 2021 16:26:12
+T37A8 000:004.894   Firmware: J-Link V9 compiled May  7 2021 16:26:12
+T37A8 000:005.057   Decompressing FW timestamp took 128 us
+T37A8 000:011.357   Hardware: V9.40
+T37A8 000:011.370   S/N: 147440509
+T37A8 000:011.374   OEM: SEGGER
+T37A8 000:011.378   Feature(s): GDB, RDI, FlashBP, FlashDL, JFlash
+T37A8 000:012.297   TELNET listener socket opened on port 19021
+T37A8 000:012.351   WEBSRV Starting webserver
+T37A8 000:012.425   WEBSRV Webserver running on local port 19080
+T37A8 000:012.431 - 9.615ms returns "O.K."
+T37A8 000:012.440 JLINK_GetEmuCaps()
+T37A8 000:012.443 - 0.004ms returns 0xB9FF7BBF
+T37A8 000:012.449 JLINK_TIF_GetAvailable(...)
+T37A8 000:012.575 - 0.131ms
+T37A8 000:012.586 JLINK_SetErrorOutHandler(...)
+T37A8 000:012.588 - 0.004ms
+T37A8 000:012.599 JLINK_ExecCommand("ProjectFile = "E:\2024\MB-A05\001_±±∂∑¥¨‘ÿ≥Ã–Ú\001_MBA05_SOFT_V01_240719\Obj\JLinkSettings.ini"", ...). 
+T37A8 000:018.485   Ref file found at: D:\Keil_v5\ARM\Segger\JLinkDevices.ref
+T37A8 000:018.521   XML referenced by ref file: C:\Program Files (x86)\SEGGER\JLink\JLinkDevices.xml
+T37A8 000:018.953   C:\Program Files (x86)\SEGGER\JLink\JLinkDevices.xml evaluated successfully.
+T37A8 000:031.839   Device "CORTEX-M4" selected.
+T37A8 000:031.957 - 19.360ms returns 0x00
+T37A8 000:032.990 JLINK_ExecCommand("Device = -AT32F435RGT7", ...). 
+T37A8 000:034.080   Device "CORTEX-M4" selected.
+T37A8 000:034.160 - 1.165ms returns 0x00
+T37A8 000:034.170 JLINK_GetHardwareVersion()
+T37A8 000:034.173 - 0.004ms returns 94000
+T37A8 000:034.178 JLINK_GetDLLVersion()
+T37A8 000:034.181 - 0.003ms returns 72002
+T37A8 000:034.184 JLINK_GetOEMString(...)
+T37A8 000:034.188 JLINK_GetFirmwareString(...)
+T37A8 000:034.191 - 0.003ms
+T37A8 000:036.967 JLINK_GetDLLVersion()
+T37A8 000:036.973 - 0.007ms returns 72002
+T37A8 000:036.976 JLINK_GetCompileDateTime()
+T37A8 000:036.979 - 0.003ms
+T37A8 000:037.706 JLINK_GetFirmwareString(...)
+T37A8 000:037.711 - 0.006ms
+T37A8 000:038.507 JLINK_GetHardwareVersion()
+T37A8 000:038.514 - 0.007ms returns 94000
+T37A8 000:039.420 JLINK_GetSN()
+T37A8 000:039.428 - 0.009ms returns 147440509
+T37A8 000:040.145 JLINK_GetOEMString(...)
+T37A8 000:041.599 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T37A8 000:042.472 - 0.877ms returns 0x00
+T37A8 000:042.481 JLINK_HasError()
+T37A8 000:042.498 JLINK_SetSpeed(5000)
+T37A8 000:042.610 - 0.116ms
+T37A8 000:042.618 JLINK_GetId()
+T37A8 000:892.994 - 850.411ms returns 0x00000000
+T37A8 003:822.432 JLINK_Close()
+T37A8 003:834.352 - 11.937ms
+T37A8 003:834.371   
+T37A8 003:834.374   Closed
