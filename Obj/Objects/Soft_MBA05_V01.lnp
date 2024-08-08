@@ -1,6 +1,7 @@
 --cpu=Cortex-M4.fp.sp
 ".\objects\api_common.o"
 ".\objects\api_fifo.o"
+".\objects\main.o"
 ".\objects\system_at32f435_437.o"
 ".\objects\startup_at32f435_437.o"
 ".\objects\at32f435_437_adc.o"
@@ -31,8 +32,18 @@
 ".\objects\bsp_rdsssend.o"
 ".\objects\bsp_log.o"
 ".\objects\bsp_config.o"
-".\objects\main.o"
+".\objects\bsp_task.o"
 ".\objects\sys_timerun.o"
+".\objects\croutine.o"
+".\objects\event_groups.o"
+".\objects\list.o"
+".\objects\queue.o"
+".\objects\stream_buffer.o"
+".\objects\tasks.o"
+".\objects\timers.o"
+".\objects\heap_4.o"
+".\objects\at32f435_437_int.o"
+".\objects\include_port.o"
 --library_type=microlib --strict --scatter ".\Objects\Soft_MBA05_V01.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

@@ -1,0 +1,368 @@
+{
+  "name": "Soft_MBA05_V01",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "API",
+        "files": [
+          {
+            "path": "../API/src/api_common.c"
+          },
+          {
+            "path": "../API/src/api_fifo.c"
+          },
+          {
+            "path": "../APP/main.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "Core",
+        "files": [
+          {
+            "path": "../Core/device_support/system_at32f435_437.c"
+          },
+          {
+            "path": "../Core/device_support/startup/mdk/startup_at32f435_437.s"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "Driver",
+        "files": [
+          {
+            "path": "../Driver/src/at32f435_437_adc.c"
+          },
+          {
+            "path": "../Driver/src/at32f435_437_crm.c"
+          },
+          {
+            "path": "../Driver/src/at32f435_437_dma.c"
+          },
+          {
+            "path": "../Driver/src/at32f435_437_ertc.c"
+          },
+          {
+            "path": "../Driver/src/at32f435_437_exint.c"
+          },
+          {
+            "path": "../Driver/src/at32f435_437_flash.c"
+          },
+          {
+            "path": "../Driver/src/at32f435_437_gpio.c"
+          },
+          {
+            "path": "../Driver/src/at32f435_437_pwc.c"
+          },
+          {
+            "path": "../Driver/src/at32f435_437_misc.c"
+          },
+          {
+            "path": "../Driver/src/at32f435_437_tmr.c"
+          },
+          {
+            "path": "../Driver/src/at32f435_437_usart.c"
+          },
+          {
+            "path": "../Driver/src/at32f435_437_scfg.c"
+          },
+          {
+            "path": "../Driver/src/at32f435_437_wwdt.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "HAL",
+        "files": [
+          {
+            "path": "../Hal/src/Hal_KeyLed.c"
+          },
+          {
+            "path": "../Hal/src/Hal_Init.c"
+          },
+          {
+            "path": "../Hal/src/Hal_PowManage.c"
+          },
+          {
+            "path": "../Hal/src/Hal_Uart.c"
+          },
+          {
+            "path": "../Hal/src/Hal_Sleep.c"
+          },
+          {
+            "path": "../Hal/src/Hal_Flash.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "BSP",
+        "files": [
+          {
+            "path": "../BSP/src/Bsp_KeyLed.c"
+          },
+          {
+            "path": "../BSP/src/Bsp_UartRec.c"
+          },
+          {
+            "path": "../BSP/src/Bsp_BatVol.c"
+          },
+          {
+            "path": "../BSP/src/Bsp_Init.c"
+          },
+          {
+            "path": "../BSP/src/Bsp_GnssParse.c"
+          },
+          {
+            "path": "../BSP/src/Bsp_RdssParse.c"
+          },
+          {
+            "path": "../BSP/src/Bsp_RdssSend.c"
+          },
+          {
+            "path": "../BSP/src/Bsp_Log.c"
+          },
+          {
+            "path": "../BSP/src/Bsp_Config.c"
+          },
+          {
+            "path": "../BSP/src/Bsp_Task.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "APP",
+        "files": [
+          {
+            "path": "../APP/Sys_TimeRun.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "Include",
+        "files": [],
+        "folders": []
+      },
+      {
+        "name": "FreeRtos",
+        "files": [
+          {
+            "path": "../freertos/source/croutine.c"
+          },
+          {
+            "path": "../freertos/source/event_groups.c"
+          },
+          {
+            "path": "../freertos/source/list.c"
+          },
+          {
+            "path": "../freertos/source/queue.c"
+          },
+          {
+            "path": "../freertos/source/stream_buffer.c"
+          },
+          {
+            "path": "../freertos/source/tasks.c"
+          },
+          {
+            "path": "../freertos/source/timers.c"
+          },
+          {
+            "path": "../freertos/source/portable/memmang/heap_4.c"
+          },
+          {
+            "path": "../freertos/FreeRTOSConfig.h"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "DEMO",
+        "files": [
+          {
+            "path": "../freertos/at32f435/src/at32f435_437_int.c"
+          },
+          {
+            "path": "../freertos/at32f435/src/include_port.c"
+          }
+        ],
+        "folders": []
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "miscInfo": {
+    "uid": "0d4ec9f489edb1ab5da4e32c1bbc8678"
+  },
+  "targets": {
+    "MB_A05_V01": {
+      "excludeList": [],
+      "toolchain": "AC5",
+      "compileConfig": {
+        "cpuType": "Cortex-M4",
+        "floatingPointHardware": "single",
+        "scatterFilePath": "",
+        "useCustomScatterFile": false,
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "RAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x60000"
+              },
+              "isChecked": true,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "ROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x8004000",
+                "size": "0xfb000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            },
+            {
+              "tag": "IROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "null",
+          "cpuName": "null"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "../API/inc",
+          "../BSP/inc",
+          "../Driver/inc",
+          "../Core/core_support",
+          "../Core/device_support",
+          "../Hal/inc",
+          "../APP",
+          "../freertos/source/include",
+          "../freertos/source/portable/memmang",
+          "../freertos/source/portable/rvds/ARM_CM4F",
+          "../freertos",
+          "../freertos/at32f435/inc",
+          ".cmsis/include",
+          "RTE/_MB_A05_V01"
+        ],
+        "libList": [],
+        "defineList": [
+          "AT32F435RGT7",
+          "USE_STDPERIPH_DRIVER",
+          "AT_START_F435_V1",
+          "HEXT_VALUE=24000000"
+        ]
+      }
+    }
+  },
+  "version": "3.4"
+}

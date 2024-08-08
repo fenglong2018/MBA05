@@ -11,7 +11,7 @@
 .\objects\bsp_uartrec.o: ..\Core\core_support\mpu_armv7.h
 .\objects\bsp_uartrec.o: ..\Core\device_support\system_at32f435_437.h
 .\objects\bsp_uartrec.o: ..\Driver\inc\at32f435_437_def.h
-.\objects\bsp_uartrec.o: D:\Keil_v5\Packs\ArteryTek\AT32F435_437_DFP\2.1.8\Device\Include\at32f435_437_conf.h
+.\objects\bsp_uartrec.o: ..\freertos\at32f435\inc\at32f435_437_conf.h
 .\objects\bsp_uartrec.o: ..\Driver\inc\at32f435_437_crm.h
 .\objects\bsp_uartrec.o: ..\Core\device_support\at32f435_437.h
 .\objects\bsp_uartrec.o: ..\Driver\inc\at32f435_437_tmr.h

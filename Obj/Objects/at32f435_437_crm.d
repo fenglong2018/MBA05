@@ -1,5 +1,5 @@
 .\objects\at32f435_437_crm.o: ..\Driver\src\at32f435_437_crm.c
-.\objects\at32f435_437_crm.o: D:\Keil_v5\Packs\ArteryTek\AT32F435_437_DFP\2.1.8\Device\Include\at32f435_437_conf.h
+.\objects\at32f435_437_crm.o: ..\freertos\at32f435\inc\at32f435_437_conf.h
 .\objects\at32f435_437_crm.o: ..\Driver\inc\at32f435_437_crm.h
 .\objects\at32f435_437_crm.o: ..\Core\device_support\at32f435_437.h
 .\objects\at32f435_437_crm.o: ..\Core\core_support\core_cm4.h
@@ -10,7 +10,7 @@
 .\objects\at32f435_437_crm.o: ..\Core\core_support\mpu_armv7.h
 .\objects\at32f435_437_crm.o: ..\Core\device_support\system_at32f435_437.h
 .\objects\at32f435_437_crm.o: ..\Driver\inc\at32f435_437_def.h
-.\objects\at32f435_437_crm.o: D:\Keil_v5\Packs\ArteryTek\AT32F435_437_DFP\2.1.8\Device\Include\at32f435_437_conf.h
+.\objects\at32f435_437_crm.o: ..\freertos\at32f435\inc\at32f435_437_conf.h
 .\objects\at32f435_437_crm.o: ..\Driver\inc\at32f435_437_tmr.h
 .\objects\at32f435_437_crm.o: ..\Driver\inc\at32f435_437_ertc.h
 .\objects\at32f435_437_crm.o: ..\Driver\inc\at32f435_437_gpio.h

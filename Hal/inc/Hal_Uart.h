@@ -41,14 +41,15 @@
 #define NUM_UART2_RX        GPIO_PINS_SOURCE3
 
 /* 串口3发送/接收           UART3_TX/RX:PC5/PC4     */
-#define IOMUX_UART3         GPIO_MUX_7
-#define PT_UART3_TX         GPIOC  
-#define IO_UART3_TX         GPIO_PINS_5
-#define NUM_UART3_TX        GPIO_PINS_SOURCE5
-#define PT_UART3_RX         GPIOC
-#define IO_UART3_RX         GPIO_PINS_4
-#define NUM_UART3_RX        GPIO_PINS_SOURCE4
-
+#ifndef NOUSEDEMOBOARD
+	#define IOMUX_UART3         GPIO_MUX_7
+	#define PT_UART3_TX         GPIOC  
+	#define IO_UART3_TX         GPIO_PINS_5
+	#define NUM_UART3_TX        GPIO_PINS_SOURCE5
+	#define PT_UART3_RX         GPIOC
+	#define IO_UART3_RX         GPIO_PINS_4
+	#define NUM_UART3_RX        GPIO_PINS_SOURCE4
+#endif
 /* 串口4发送/接收           UART4_TX/RX:PC10/PC11     */
 #define IOMUX_UART4         GPIO_MUX_8
 #define PT_UART4_TX         GPIOC  

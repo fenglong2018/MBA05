@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>AT32F435RGT7,USE_STDPERIPH_DRIVER,AT_START_F435_V1,HEXT_VALUE=24000000</Define>
               <Undefine></Undefine>
-              <IncludePath>..\API\inc;..\BSP\inc;..\Driver\inc;..\Core\core_support;..\Core\device_support;..\Hal\inc;..\APP</IncludePath>
+              <IncludePath>..\API\inc;..\BSP\inc;..\Driver\inc;..\Core\core_support;..\Core\device_support;..\Hal\inc;..\APP;..\freertos\source\include;..\freertos\source\portable\memmang;..\freertos\source\portable\rvds\ARM_CM4F;..\freertos;..\freertos\at32f435\inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -391,6 +391,11 @@
               <FileName>api_fifo.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\API\src\api_fifo.c</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\main.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -562,16 +567,16 @@
               <FileType>1</FileType>
               <FilePath>..\BSP\src\Bsp_Config.c</FilePath>
             </File>
+            <File>
+              <FileName>Bsp_Task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\src\Bsp_Task.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>APP</GroupName>
           <Files>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\APP\main.c</FilePath>
-            </File>
             <File>
               <FileName>Sys_TimeRun.c</FileName>
               <FileType>1</FileType>
@@ -581,6 +586,71 @@
         </Group>
         <Group>
           <GroupName>Include</GroupName>
+        </Group>
+        <Group>
+          <GroupName>FreeRtos</GroupName>
+          <Files>
+            <File>
+              <FileName>croutine.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\freertos\source\croutine.c</FilePath>
+            </File>
+            <File>
+              <FileName>event_groups.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\freertos\source\event_groups.c</FilePath>
+            </File>
+            <File>
+              <FileName>list.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\freertos\source\list.c</FilePath>
+            </File>
+            <File>
+              <FileName>queue.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\freertos\source\queue.c</FilePath>
+            </File>
+            <File>
+              <FileName>stream_buffer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\freertos\source\stream_buffer.c</FilePath>
+            </File>
+            <File>
+              <FileName>tasks.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\freertos\source\tasks.c</FilePath>
+            </File>
+            <File>
+              <FileName>timers.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\freertos\source\timers.c</FilePath>
+            </File>
+            <File>
+              <FileName>heap_4.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\freertos\source\portable\memmang\heap_4.c</FilePath>
+            </File>
+            <File>
+              <FileName>FreeRTOSConfig.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\freertos\FreeRTOSConfig.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>DEMO</GroupName>
+          <Files>
+            <File>
+              <FileName>at32f435_437_int.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\freertos\at32f435\src\at32f435_437_int.c</FilePath>
+            </File>
+            <File>
+              <FileName>include_port.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\freertos\at32f435\src\include_port.c</FilePath>
+            </File>
+          </Files>
         </Group>
       </Groups>
     </Target>

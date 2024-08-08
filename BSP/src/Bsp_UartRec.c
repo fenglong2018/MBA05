@@ -87,7 +87,7 @@ void Bsp_Receive_Uart1_Fifo_Data(void)
 void Bsp_Receive_Uart2_Fifo_Data(void)
 {
   uint8_t *pUartNode = NULL;								    //定义空指针
-	uint8_t temp;
+//	uint8_t temp;
 	pUartNode = lm_fifo_get_node(&uart2_rx_fifo_ctrl);		    //从FIFO取数据
 	if(pUartNode == NULL)									    //如果是空，跳出
 	{
@@ -95,7 +95,7 @@ void Bsp_Receive_Uart2_Fifo_Data(void)
 	}
 	else													    //否则每字节处理
 	{
-		temp = *pUartNode;	
+//		temp = *pUartNode;	
 		lm_fifo_delete_node(&uart2_rx_fifo_ctrl);			    //删除取的字节
 		//Bsp_Port_Parse_Byte(temp);
 	}

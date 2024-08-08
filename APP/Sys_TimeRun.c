@@ -68,15 +68,18 @@ void SlotBranch1s(void);
 函数名称：SysTick_Handler
 具体描述：SysTick中断
 ----------------------------------------------------------------------------*/
+#ifdef USEFREERTOS	
 void SysTick_Handler(void)
 {
     u81msTime = 1;
     s_u32SysTickTime++;
 }
+#endif
 /*----------------------------------------------------------------------------
 函数名称：time_routine
 具体描述：1ms时间循环执行
 ----------------------------------------------------------------------------*/
+#ifdef USEFREERTOS
 void Time_Routime(void)
 {
     if(u81msTime)
@@ -85,6 +88,7 @@ void Time_Routime(void)
         u81msTime = 0;
     }
 }
+#endif
 /*----------------------------------------------------------------------------
 函数名称：SlotBranch1ms
 具体描述：1ms执行一次
@@ -103,7 +107,7 @@ void SlotBranch10ms(void)
 	{
 		case 0:
 		{
-            ADConvert();
+//            ADConvert();
 		}
 			break;
 		case 1:
@@ -163,7 +167,7 @@ void SlotBranch100ms(void)
 	{
 		case 0:
 		{
-       Bsp_Port_InforGet_Ctrl();
+			Bsp_Port_InforGet_Ctrl();
 		}
 			break;
 		case 1:
@@ -226,39 +230,39 @@ void SlotBranch1s(void)
 	{
 		case 0:
 		{      
-        Bsp_Nor_SOS_SendCtrl();
+			Bsp_Nor_SOS_SendCtrl();
 		}
 			break;
 		case 1:
 		{
-      #if LOG
-      printf("Temp = %f , VSloar = %d\n",Bsp_Get_Temp(),Bsp_Get_SloarVol());
-      #endif
+		  #if LOG
+		  printf("Temp = %f , VSloar = %d\n",Bsp_Get_Temp(),Bsp_Get_SloarVol());
+		  #endif
 		}
 			break;
 		case 2:
 		{
-        Bsp_Pull_SendCtrl();
+			Bsp_Pull_SendCtrl();
 		}
 			break;
 		case 3:
 		{
-      Bsp_Bat_Vol_Display();
+			Bsp_Bat_Vol_Display();
 		}
 			break;
 		case 4:
 		{
-      Bsp_Sys_State_Ctrl();
+			Bsp_Sys_State_Ctrl();
 		}
 			break;
 		case 5:
 		{
-      Bsp_Vbat_Chag_Ctrl();
+			Bsp_Vbat_Chag_Ctrl();
 		}
 			break;
 		case 6:
 		{
-      Bsp_Error_Led_Display();
+			Bsp_Error_Led_Display();
 		}
 			break;
 		case 7:
@@ -273,7 +277,7 @@ void SlotBranch1s(void)
 			break;
 		default:
 		{
-      u81sBranch = 0;
+			u81sBranch = 0;
 		}
 			break;
 	}

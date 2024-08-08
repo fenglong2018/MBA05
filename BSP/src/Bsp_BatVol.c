@@ -18,6 +18,8 @@
 
 #include    "Bsp_BatVol.h"
 #include    "Bsp_Log.h"
+
+
 /************************************************************************
 宏定义
 *************************************************************************/
@@ -100,47 +102,47 @@ uint16_t Arithmetic_Average(uint16_t ADVal,uint32_t * pADSum,uint16_t ADAverage,
 ----------------------------------------------------------------------------*/
 void ADConvert(void)
 {
-  if(tBatVolCtrl.u8StartPercentOnce | tBatVolCtrl.u8StartPercentAlw)
-  {
-    switch(tADCFilter.u8Branch)
-    {
-      //触发转换
-      case 0:
-      {
-        Hal_Start_VBat_ADC_Convert();
-        tADCFilter.u8Branch++;
-      }
-        break;
-      //结果赋值平均
-      case 1:
-      {
-        tADCFilter.u32Restult = Hal_Get_ADC1_Value();
-        tADCFilter.u16ADC4Result = Arithmetic_Average(tADCFilter.u32Restult,&tADCFilter.u32ADC4Sum,tADCFilter.u16ADC4Result,&tADCFilter.u8ADC4Time);
-        tADCFilter.u8Branch++;
-      }
-        break;
-        //触发转换
-      case 2:
-      {
-        Hal_Start_VSloar_ADC_Convert();
-        tADCFilter.u8Branch++;
-      }
-        break;
-      //结果赋值平均
-      case 3:
-      {
-        tADCFilter.u32Restult = Hal_Get_ADC2_Value();
-        tADCFilter.u16ADC5Result = Arithmetic_Average(tADCFilter.u32Restult,&tADCFilter.u32ADC5Sum,tADCFilter.u16ADC5Result,&tADCFilter.u8ADC5Time);
-        tADCFilter.u8Branch = 0;
-      }
-        break;
-      default:
-      {
-       tADCFilter.u8Branch = 0;											//返回第一个采样通道
-      }
-        break;
-    }
-  }
+	if(tBatVolCtrl.u8StartPercentOnce | tBatVolCtrl.u8StartPercentAlw)
+	{
+		switch(tADCFilter.u8Branch)
+		{
+			//触发转换
+			case 0:
+			{
+				Hal_Start_VBat_ADC_Convert();
+				tADCFilter.u8Branch++;
+			}
+				break;
+			//结果赋值平均
+			case 1:
+			{
+				tADCFilter.u32Restult = Hal_Get_ADC1_Value();
+				tADCFilter.u16ADC4Result = Arithmetic_Average(tADCFilter.u32Restult,&tADCFilter.u32ADC4Sum,tADCFilter.u16ADC4Result,&tADCFilter.u8ADC4Time);
+				tADCFilter.u8Branch++;
+			}
+				break;
+				//触发转换
+			case 2:
+			{
+				Hal_Start_VSloar_ADC_Convert();
+				tADCFilter.u8Branch++;
+			}
+				break;
+			//结果赋值平均
+			case 3:
+			{
+				tADCFilter.u32Restult = Hal_Get_ADC2_Value();
+				tADCFilter.u16ADC5Result = Arithmetic_Average(tADCFilter.u32Restult,&tADCFilter.u32ADC5Sum,tADCFilter.u16ADC5Result,&tADCFilter.u8ADC5Time);
+				tADCFilter.u8Branch = 0;
+			}
+				break;
+			default:
+			{
+			 tADCFilter.u8Branch = 0;											//返回第一个采样通道
+			}
+				break;
+		}
+	}
 }
 
 /*----------------------------------------------------------------------------

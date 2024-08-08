@@ -364,7 +364,7 @@ void uart4_data_send(uint16_t value)
   }
 int fputc(int ch, FILE *f)
 {
-  usart_data_transmit(USART2, (uint16_t)ch);
-  while(RESET == usart_flag_get(USART2, USART_TDC_FLAG));
+  usart_data_transmit(USART3, (uint16_t)ch);
+  while(RESET == usart_flag_get(USART3, USART_TDC_FLAG));
   return ch;
 }

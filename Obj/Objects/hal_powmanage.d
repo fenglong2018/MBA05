@@ -9,7 +9,7 @@
 .\objects\hal_powmanage.o: ..\Core\core_support\mpu_armv7.h
 .\objects\hal_powmanage.o: ..\Core\device_support\system_at32f435_437.h
 .\objects\hal_powmanage.o: ..\Driver\inc\at32f435_437_def.h
-.\objects\hal_powmanage.o: D:\Keil_v5\Packs\ArteryTek\AT32F435_437_DFP\2.1.8\Device\Include\at32f435_437_conf.h
+.\objects\hal_powmanage.o: ..\freertos\at32f435\inc\at32f435_437_conf.h
 .\objects\hal_powmanage.o: ..\Driver\inc\at32f435_437_crm.h
 .\objects\hal_powmanage.o: ..\Core\device_support\at32f435_437.h
 .\objects\hal_powmanage.o: ..\Driver\inc\at32f435_437_tmr.h

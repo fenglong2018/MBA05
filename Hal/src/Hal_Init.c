@@ -153,6 +153,7 @@ void Mcu_Hal_Init(void)
     Hal_Pow_Switch_Init();
     Hal_Charge_Init();
     Hal_Uart2_Init();
+	Hal_Uart3_Init();
     Hal_RTC_init(1,0,0);
     RTC_Fre_Calib();
     //Hal_Wdt_Init();
